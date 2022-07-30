@@ -1,0 +1,70 @@
+.ap-card{
+    box-shadow: 0px 2px 4px $box-shadow-color;
+    border-radius: 8px;
+    border: none;
+    .ap-card-img-section{
+        position: relative;
+        img{
+            width:100%;
+            border-radius: 8px 8px 0 0;
+        }
+        .ap-card-img-icon{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top:10px;
+            right: 10px;
+
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            width: 32px;
+            height: 32px;
+            svg{
+                color :#fff;
+            }
+        }
+    }
+    .ap-card-content-section{
+        .ap-content-name{
+            @include font-styling(18px, 26.01px);
+            text-align: left;
+            margin-bottom: 15px;
+        }
+        .ap-content-btn-section{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top:15px;
+            .ap-status-btn{
+                @include link-style;
+                @include button-styling;
+                background-color: #fff;
+                box-shadow: 0px 2px 4px $box-shadow-color;
+                border-radius: 8px;
+                border: 2px solid $logo-primary-color;
+                padding: 6px 16px;
+                font-weight: 500;
+            }
+            .ap-cost{
+                @include font-styling(18px,26px);
+                color :$logo-primary-color;
+                margin-bottom: 0;
+            }
+            .ap-prev-cost{
+                margin-bottom: 0;
+            }
+        }
+        .ap-content-details-section{
+            display: flex;
+            justify-content: space-between;
+            margin-top:15px;
+            .ap-content-details-item{
+                @include font-styling(14px, 20px);
+                font-weight: 400;
+                color : $font-light-gray;
+            }
+        }
+
+    }
+}

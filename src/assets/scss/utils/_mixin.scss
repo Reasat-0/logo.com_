@@ -1,0 +1,19 @@
+@mixin font-styling($size,$line-height) {
+    font-size: $size;
+    font-weight: 500;
+    line-height: $line-height;
+    color: $secondary-font;
+    text-transform: capitalize;
+}
+
+@mixin button-styling{
+    color: $logo-primary-color;
+    background: $logo-primary-color;
+    font-size:14px;
+    border-radius: 38px;
+    padding: 10px 10px;
+}
+
+@mixin link-style{
+    text-decoration: none;
+}

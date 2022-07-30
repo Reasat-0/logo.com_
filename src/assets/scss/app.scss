@@ -1,0 +1,18 @@
+
+@import "../scss/utils/mixin";
+@import "../scss/utils/variables";
+body{
+    font-family: 'Jost', sans-serif;
+    .custom-container{
+        max-width: 100%;
+        padding: 15px 40px;
+        background: $white-bg;
+    }
+}
+
+
+@import "../scss/components/navbar";
+@import "../scss/components/mainsection";
+@import "../scss/components/appartmentcard";
+
+
