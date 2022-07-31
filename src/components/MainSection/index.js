@@ -17,11 +17,37 @@ const MainSection = () => {
     ]
 
     const settings = {
-        dots: true,
+        dots: false,
         infinite: false,
         speed: 500,
         slidesToShow: 5,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [
+            {
+              breakpoint: 1300,
+              settings: {
+                slidesToShow: 4
+              }
+            },
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 3
+              }
+            },
+            {
+              breakpoint: 767,
+              settings: {
+                slidesToShow: 2
+              }
+            },
+            {
+                breakpoint: 520,
+                settings: {
+                  slidesToShow: 1
+                }
+              }
+          ]
       };
 
 
@@ -44,12 +70,13 @@ const MainSection = () => {
                             <AppartmentCard appartment={item} key={i}/>
                         ))
                     }
+                </Slider>
                     {/* <Row>
                         {
                             appartments.map( (item, i) => (
 
-                                <Col className="col-1 col-sm-2 col-md-3 col-lg-3" key={i}>
-                                    
+                                <Col className="col-sm-2 col" key={i}>
+                                    <AppartmentCard appartment={item} key={i}/>
                                 </Col>
                                 
                             ))
@@ -57,7 +84,7 @@ const MainSection = () => {
 
                     </Row> */}
 
-                </Slider>
+                
             </div>
         </section>
     )

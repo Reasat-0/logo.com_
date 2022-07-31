@@ -26,22 +26,22 @@ const AppartmentCard = ({appartment}) => {
                         <p className="ap-cost">$ { cost }</p>
                         {
                             prev_cost && 
-                            <p className="ap-prev-cost">$ { prev_cost }</p>
+                            <p className="ap-prev-cost"> $ { prev_cost } </p>
 
                         }
                     </div>
 
                     <div className="ap-content-details-section">
                         <div className="ap-content-details-item">
-                            <FontAwesomeIcon icon="fa-regular fa-heart" />
+                            <FontAwesomeIcon icon="fa-solid fa-arrow-up-right-from-square" />
                             <span> { area } sqft </span>
                         </div>
                         <div className="ap-content-details-item">
-                            <FontAwesomeIcon icon="fa-regular fa-heart" />
+                            <FontAwesomeIcon icon="fa-solid fa-bed" />
                             <span> { rooms } rooms </span>
                         </div>
                         <div className="ap-content-details-item">
-                            <FontAwesomeIcon icon="fa-regular fa-heart" />
+                            <FontAwesomeIcon icon="fa-solid fa-shower" />
                             <span> {baths} baths </span>
                         </div>
                     </div>

@@ -10,13 +10,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faBars, faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faAngleRight, faArrowUpRightFromSquare, faBed, faShower } from "@fortawesome/free-solid-svg-icons";
 import { faHeart } from "@fortawesome/free-regular-svg-icons";
 
 import "../src/assets/scss/app.scss";
 
 
-library.add(faBars,faAngleRight,faHeart);
+library.add(faBars,faAngleRight,faHeart, faArrowUpRightFromSquare, faBed, faShower);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 

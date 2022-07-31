@@ -10,6 +10,32 @@ body{
     }
 }
 
+@media screen and (max-width: 1024px){
+    body{
+        .custom-container{
+            padding: 15px 25px;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 520px){
+    body{
+        .custom-container{
+            padding: 15px 40px;
+        }
+    }
+    
+}
+@media screen and (max-width: 400px){
+    body{
+        .custom-container{
+            padding: 15px 25px;
+        }
+    }
+    
+}
+
 
 @import "../scss/components/navbar";
 @import "../scss/components/mainsection";

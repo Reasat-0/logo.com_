@@ -53,6 +53,17 @@
             }
             .ap-prev-cost{
                 margin-bottom: 0;
+                position: relative;
+                &:before{
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 1px;
+                    top: 50%;
+                    background: $font-light-gray;
+                    transform: translateY(-50%);
+
+                }
             }
         }
         .ap-content-details-section{
@@ -67,4 +78,111 @@
         }
 
     }
+}
+
+@media screen and (max-width:1500px){
+    .ap-card{
+        .ap-card-content-section{
+            .ap-content-name{
+                font-size :16px;
+            }
+            .ap-content-btn-section{
+                .ap-cost{
+                    font-size: 14px;
+                }
+                .ap-prev-cost{
+                    font-size: 13px;
+                }
+
+            }
+            .ap-content-details-section{
+                .ap-content-details-item{
+                    font-size : 12px;
+                }
+            }
+
+        }
+
+    } 
+}
+
+@media screen and (max-width:1200px){
+    .ap-card{
+        .ap-card-content-section{
+            .ap-content-name{
+                font-size :16px;
+            }
+            .ap-content-btn-section{
+                .ap-status-btn{
+                    padding: 3px 8px;
+                }
+
+            }
+
+        }
+
+    } 
+}
+
+@media screen and (max-width:520px){
+    .ap-card{
+        .ap-card-content-section{
+            .ap-content-btn-section{
+                .ap-status-btn{
+                    padding: 6px 15px;
+                }
+            }
+            .ap-content-name{
+                font-size :18px;
+            }
+            .ap-content-btn-section{
+                .ap-cost{
+                    font-size: 18px;
+                }
+                .ap-prev-cost{
+                    font-size: 16px;
+                }
+
+            }
+            .ap-content-details-section{
+                .ap-content-details-item{
+                    font-size : 16px;
+                }
+            }
+
+        }
+
+    } 
+}
+
+
+@media screen and (max-width:380px){
+    .ap-card{
+        .ap-card-content-section{
+            .ap-content-btn-section{
+                .ap-status-btn{
+                    padding: 6px 15px;
+                }
+            }
+            .ap-content-name{
+                font-size :16px;
+            }
+            .ap-content-btn-section{
+                .ap-cost{
+                    font-size: 14px;
+                }
+                .ap-prev-cost{
+                    font-size: 14px;
+                }
+
+            }
+            .ap-content-details-section{
+                .ap-content-details-item{
+                    font-size : 13px;
+                }
+            }
+
+        }
+
+    } 
 }
