@@ -36,3 +36,8 @@
     transform: rotate(360deg);
   }
 }
+
+
+@tailwind Base;
+@tailwind Component;
+@tailwind Utilities;
