@@ -1,5 +1,5 @@
 .main-section{
-    padding: 70px 0 20px 12px;
+    padding: 70px 0;
     .section-heading-wrapper{
         display: flex;
         justify-content: space-between;
@@ -15,36 +15,146 @@
                 @include font-styling(16px, 23.12px);
                 @include link-style;
                 color: $logo-primary-color;
-                letter-spacing: 2%;
             }
             
         }
     }
     .section-content-wrapper{
         .slick-slider{
-            .slick-slide{
-                // padding: 0 10px;
-                padding: 0 6px;
-            }
-            .slick-arrow{
-                width: 35px;
-                height: 35px;
-                z-index: 1;
-                &.slick-next{
-                    right:-20px;
+            &.ap-slider{
+                .slick-slide{
+                    padding: 0 6px;
                 }
-                &.slick-prev{
-                    left: -20px;
+                .slick-arrow{
+                    width: 35px;
+                    height: 35px;
+                    z-index: 1;
+                    &.slick-next{
+                        right:-15px;
+                    }
+                    &.slick-prev{
+                        left: -15px;
+                    }
+                    &:before{
+                        font-size:35px;
+                        color: black;
+                    }
                 }
-                &:before{
-                    font-size:35px;
-                    color: black;
-                }
+
             }
         }   
     }
-}
+    .horizontal-bar{
+        background-color: $gray-bar;
+        width: 99%;
+        height: 5px;
+        position: relative;
+        border-radius: 10px;
+        &:before{
+            background-color: $logo-primary-color;
+            content: "";
+            position: absolute;
+            left: 0;
+            width:30%;
+            height:100%;
+            border-radius: 10px 0 0 10px;
 
+        }
+    }
+}
+@media screen and (min-width : 1921px) {
+    .main-section{
+        .section-heading-wrapper{
+            .section-heading{
+                font-size: 36px;
+            }
+            .section-heading-link{
+                a{
+                    font-size: 22px;
+                }
+                
+            }
+        }
+        .section-content-wrapper{
+            .slick-slider{
+                &.ap-slider{
+                    .slick-slide{
+                        padding: 0 10px;
+                    }
+                    .slick-arrow{
+                        width: 45px;
+                        height: 45px;
+                        &:before{
+                            font-size:35px;
+                            color: black;
+                        }
+                    }
+    
+                }
+            }   
+        }
+    }    
+}
+@media screen and (min-width : 2600px) {
+    .main-section{
+        .section-heading-wrapper{
+            .section-heading{
+                font-size: 40px;
+            }
+            .section-heading-link{
+                a{
+                    font-size: 26px;
+                }
+                
+            }
+        }
+        .section-content-wrapper{
+            .slick-slider{
+                &.ap-slider{
+                    .slick-arrow{
+                        width: 48px;
+                        height: 48px;
+                        &:before{
+                            font-size:38px;
+                            color: black;
+                        }
+                    }
+    
+                }
+            }   
+        }
+    }    
+}
+@media screen and (min-width : 3200px) {
+    .main-section{
+        .section-heading-wrapper{
+            .section-heading{
+                font-size: 42px;
+            }
+            .section-heading-link{
+                a{
+                    font-size: 28px;
+                }
+                
+            }
+        }
+        .section-content-wrapper{
+            .slick-slider{
+                &.ap-slider{
+                    .slick-arrow{
+                        width: 50px;
+                        height: 50px;
+                        &:before{
+                            font-size:40px;
+                            color: black;
+                        }
+                    }
+    
+                }
+            }   
+        }
+    }    
+}
 @media screen and (max-width : 520px){
     .main-section{
         .section-heading-wrapper{

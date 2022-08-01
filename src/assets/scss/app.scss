@@ -8,8 +8,41 @@ body{
         padding: 15px 40px;
         background: $white-bg;
     }
+    .App{
+        background: $white-bg;
+    }
 }
 
+@media screen and (min-width:1500px){
+    body{
+        .custom-container{
+            max-width:95%;
+        }
+    }
+}
+@media screen and (min-width:1921px){
+    body{
+        .custom-container{
+            max-width:90%;
+        }
+    }
+}
+
+@media screen and (min-width:2600px){
+    body{
+        .custom-container{
+            padding: 40px;
+        }
+    }
+}
+
+@media screen and (min-width:3200px){
+    body{
+        .custom-container{
+            padding: 60px;
+        }
+    }
+}
 @media screen and (max-width: 1024px){
     body{
         .custom-container{
@@ -22,7 +55,7 @@ body{
 @media screen and (max-width: 520px){
     body{
         .custom-container{
-            padding: 15px 40px;
+            padding: 15px 25px;
         }
     }
     
@@ -30,7 +63,7 @@ body{
 @media screen and (max-width: 400px){
     body{
         .custom-container{
-            padding: 15px 25px;
+            padding: 15px 15px;
         }
     }
     

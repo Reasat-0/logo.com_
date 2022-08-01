@@ -2,16 +2,24 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { Col, Row } from "reactstrap";
 import AppartmentCard from "../AppartmentCard";
 import Slider from "react-slick";
+
+import appartmentImg from '../../assets/image/app.png'
+import appartmentImg1 from '../../assets/image/app1.png'
+import appartmentImg2 from '../../assets/image/app2.png'
+import appartmentImg3 from '../../assets/image/app3.png'
+import appartmentImg4 from '../../assets/image/app4.png'
+
 const MainSection = () => {
     
     const appartments = [
 
-        { img: '' , name : '5300 Lakeside, Newyork', status: 'Buy', cost: '14,500', prev_cost: null , area: '1600', rooms: '2', baths: '2' },
-        { img: '' , name : '5300 Lakeside, Newyork', status: 'Buy', cost: '14,500', prev_cost: '34,322' , area: '1600', rooms: '2', baths: '2' },
-        { img: '' , name : '5300 Lakeside, Newyork', status: 'Buy', cost: '14,500', prev_cost: null , area: '1600', rooms: '2', baths: '2' },
-        { img: '' , name : '5300 Lakeside, Newyork', status: 'Buy', cost: '14,500', prev_cost: null , area: '1600', rooms: '2', baths: '2' },
-        { img: '' , name : '5300 Lakeside, Newyork', status: 'Buy', cost: '14,500', prev_cost: null , area: '1600', rooms: '2', baths: '2' },
-        { img: '' , name : '5300 Lakeside, Newyork', status: 'Buy', cost: '14,500', prev_cost: null , area: '1600', rooms: '2', baths: '2' }
+        { img: [appartmentImg, appartmentImg1, appartmentImg3] , name : '5300 Lakeside, Newyork', status: 'Buy', cost: '14,500', prev_cost: null , area: '1600', rooms: '2', baths: '2' },
+        { img: [appartmentImg1, appartmentImg4, appartmentImg2] , name : '5300 Lakeside, Newyork', status: 'Buy', cost: '14,500', prev_cost: '34,322' , area: '1600', rooms: '2', baths: '2' },
+        { img: [appartmentImg2, appartmentImg1, appartmentImg4] , name : '5300 Lakeside, Newyork', status: 'Buy', cost: '14,500', prev_cost: null , area: '1600', rooms: '2', baths: '2' },
+        { img: [appartmentImg3, appartmentImg2, appartmentImg1] , name : '5300 Lakeside, Newyork', status: 'Buy', cost: '14,500', prev_cost: null , area: '1600', rooms: '2', baths: '2' },
+        { img: [appartmentImg4, appartmentImg2, appartmentImg3] , name : '5300 Lakeside, Newyork', status: 'Buy', cost: '14,500', prev_cost: null , area: '1600', rooms: '2', baths: '2' },
+        { img: [appartmentImg2, appartmentImg1, appartmentImg3] , name : '5300 Lakeside, Newyork', status: 'Buy', cost: '14,500', prev_cost: null , area: '1600', rooms: '2', baths: '2' },
+        { img: [appartmentImg2, appartmentImg1, appartmentImg3] , name : '5300 Lakeside, Newyork', status: 'Buy', cost: '14,500', prev_cost: null , area: '1600', rooms: '2', baths: '2' }
 
 
     ]
@@ -23,6 +31,18 @@ const MainSection = () => {
         slidesToShow: 5,
         slidesToScroll: 1,
         responsive: [
+            {
+                breakpoint: 4000,
+                settings: {
+                  slidesToShow: 6
+                }
+            },
+            {
+                breakpoint: 2599,
+                settings: {
+                  slidesToShow: 5
+                }
+            },
             {
               breakpoint: 1300,
               settings: {
@@ -71,21 +91,11 @@ const MainSection = () => {
                         ))
                     }
                 </Slider>
-                    {/* <Row>
-                        {
-                            appartments.map( (item, i) => (
+                <div className="horizontal-bar mx-auto mt-5 mb-3 px-2">
 
-                                <Col className="col-sm-2 col" key={i}>
-                                    <AppartmentCard appartment={item} key={i}/>
-                                </Col>
-                                
-                            ))
-                        }
-
-                    </Row> */}
-
-                
+                </div>
             </div>
+
         </section>
     )
 }

@@ -25,7 +25,7 @@
                         @include button-styling;
                         color: $white-font;
                         padding:10px 35px;
-                        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06), 0px 4px 6px rgba(0, 0, 0, 0.1);;
+                        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06), 0px 4px 6px rgba(0, 0, 0, 0.1);
                     }
                     
                 }
@@ -51,7 +51,103 @@
     }
     
 }
-
+@media screen and (min-width:1921px){
+    .custom-navbar{
+        .logo-section{
+            flex: 0 0 200px;
+            max-width: 200px;
+        }
+        .custom-nav-collapse{
+            flex: 0 0 calc(100% - 200px);
+            max-width: calc(100% - 200px);
+            .custom-nav-item-container{
+                .nav-item{
+                    .nav-link{
+                        @include font-styling(19px, 23px);
+                        
+                    }
+                    &.log-in-nav-item{
+                        .nav-link{
+                            font-size: 19px;
+                        }
+                        
+                    }
+                }
+            }
+            .static-hamburger-menu{    
+                margin: 0 15px;
+                height: 54px;
+                width: 54px;
+    
+            }
+        }
+        
+    }
+}
+@media screen and (min-width:2600px){
+    .custom-navbar{
+        .logo-section{
+            flex: 0 0 250px;
+            max-width: 250px;
+        }
+        .custom-nav-collapse{
+            flex: 0 0 calc(100% - 250px);
+            max-width: calc(100% - 250px);
+            .custom-nav-item-container{
+                .nav-item{
+                    .nav-link{
+                        @include font-styling(23px, 23px);
+                        
+                    }
+                    &.log-in-nav-item{
+                        .nav-link{
+                            font-size: 23px;
+                        }
+                        
+                    }
+                }
+            }
+            .static-hamburger-menu{    
+                height: 58px;
+                width: 58px;
+    
+            }
+        }
+        
+    }
+}
+@media screen and (min-width:3200px){
+    .custom-navbar{
+        .logo-section{
+            flex: 0 0 300px;
+            max-width: 300px;
+        }
+        .custom-nav-collapse{
+            flex: 0 0 calc(100% - 300px);
+            max-width: calc(100% - 300px);
+            .custom-nav-item-container{
+                .nav-item{
+                    .nav-link{
+                        @include font-styling(28px, 23px);
+                        
+                    }
+                    &.log-in-nav-item{
+                        .nav-link{
+                            font-size: 28px;
+                        }
+                        
+                    }
+                }
+            }
+            .static-hamburger-menu{    
+                height: 64px;
+                width: 64px;
+    
+            }
+        }
+        
+    }
+}
 @media (min-width: 768px) and (max-width: 850px) {
     .custom-navbar{
         .custom-nav-collapse{

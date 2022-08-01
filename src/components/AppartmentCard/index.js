@@ -1,17 +1,42 @@
 import { Button, Card, CardBody } from "reactstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import appartmentImg from '../../assets/image/app.png'
+import Slider from "react-slick";
 const AppartmentCard = ({appartment}) => {
-    let {name, img, status, cost, prev_cost, area, rooms, baths} = appartment;
+    const settings = {
+        dots: true,
+        infinite: false,
+        arrows: false,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      };
+
+    let {name, img, status, cost, prev_cost, area, rooms, baths } = appartment;
+    console.log(appartment)
     return (
         <Card
             
             className={"ap-card"}
             >
             <div className="ap-card-img-section">
-                <img
-                    alt="Card image"
-                    src="https://picsum.photos/300/200"
-                />
+                
+                            {/* <img
+                                alt={'item'}
+                                src={appartmentImg}
+                            /> */}
+                <Slider {...settings} className="ap-img-slider">
+                    {
+                        img.map( (item, i) => (
+                            <img
+                                alt={name}
+                                src={item}
+                            />
+                        ))
+                    }
+                </Slider>   
+
+                
                 <div className="ap-card-img-icon">
                     <FontAwesomeIcon icon="fa-regular fa-heart" />
                 </div>
